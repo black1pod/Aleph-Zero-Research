@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Aleph - Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Version 2">
+	<link rel="stylesheet" href="/font-awesome-4.2.0/css/font-awesome.css">
+    <link href="/css/style.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="/js/livevalidation_standalone.compressed.js" type="text/javascript" ></script>
+	
+	
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+	
+  </head>
+
+  <body>
+	<div id="wrapper">
+        <div id="headerbig">
+            <div id="headercenter">
+				<div class="logo">
+					<a href="/"><img src="/img/logo-gray.png" alt="Aleph Zero Research Website"></a>
+                </div>
+				<nav>		
+                    <ul class="main-menu">
+						<li class="active top"><a href="/" class="h1">Home</a></li>
+						<li class="top"><a href="/about/who-we-are/" class="h1">About</a>
+							<ul>
+								<li class="sub"><a href="/about/who-we-are/" class="h1">Who We Are</a></li>
+								<li class="sub"><a href="/about/what-we-do/" class="h1">What We Do</a></li>
+								<li class="sub"><a href="/about/how-we-work/" class="h1">How We Work</a></li>
+							</ul>
+						</li>
+						<li class="top"><a href="/services/consulting-services/" class="h1">Services</a>
+							<ul class="services">
+								<li class="sub"><a href="/services/consulting-services/" class="h1">Consulting Services</a></li>
+								<li class="sub"><a href="/services/solid-solutions-for-IT" class="h1">Solid Solutions for IT</a></li>
+								<li class="solutions sub"><a href="/services/r-training/basic-r/" class="h1">R Training</a>
+									<ul>
+										<li><a href="/services/r-training/basic-r/" class="h1">Basic R</a></li>
+										<li><a href="/services/r-training/advance-r/" class="h1">Advance R</a></li>
+										<li><a href="/services/r-training/r-plus-statistical" class="h1">R+ Statistical</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li class="top"><a href="/blog/" class="h1">Blog</a></li>
+						<li class="top"><a href="/contact/" class="h1">Contact</a></li>
+					</ul>
+                </nav>
+			</div>
+		</div>
+	
+		<div id="mainbox">
+			<div class="main-content">
+				<div class="main-content-head">
+					<div class="main-content-head-left">
+						<div class="main-content-head-left-frame">
+						Contact Us
+						</div>
+					</div>
+				</div>
+				
+				<div class="articles">
+					<div class="content-width">
+
+				<div class="formmessage">
+	<h2>&nbsp;SEND US A MESSAGE</h2>
+	<p>Thank you for your interest in AZR Consulting.  We look forward to hearing from you.  Please feel free to contact us! </p>
+</div>
+
+
+<form method="POST" action="////formspree.io/frances.lim@uap.asia">
+	<div class="mainform">
+		
+		<div class="formwidth">
+			<p class="formfieldtitle">
+            	<input id="field0" name="name" type="text" value="Name" style="width: 100%"  class="formlabel"/>
+			</p>
+		</div>
+
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<input id="field1" name="company" type="text" value="Company" style="width: 100%" class="formlabel" />
+			</p>
+		</div>
+				
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<input id="field2" value="Contact Number" name="contactNum" type="text" style="width: 100%"class="formlabel"  />
+			</p>
+		</div>
+				
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+					<input id="field3" name="emailAddress" type="text" value="Email Address" style="width: 100%" class="formlabel" />
+			</p>
+		</div>		
+
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				
+					<select id="field4" name="subject" style="width: 100%" class="formlabel"><option value="">-- Select type of service --</option><option value="Consulting Services">Consulting Services</option><option value="Solid Solutions for IT" >Solid Solutions for IT</option><option value="Basic R" >Basic R</option><option value="Advance R" >Advance R</option><option value="R+ Statistical" >R+ Statistical</option></select>
+			</p>
+		</div>
+				
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<textarea id="field5" name="message" style="width: 100%" value="Message" class="formlabel"></textarea>
+			</p>
+		</div>						
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<label for="captchaLine" class="formlabel">72/2</label>
+				<input id="field6" name="captchaLine" type="text" value="" style="width: 20%"  />
+			</p>
+		</div>  
+				
+			
+		<div>
+			<div class="formwidth">
+				<p class="formfieldtitle">
+				<input type="submit" value="Submit" style="font-size: 100%; height: 24px; width: 100px"  /></p>
+			</div>
+		</div>
+	</div>
+</form>
+
+<script type="text/javascript" >
+	var field0 = new LiveValidation("field0", {validMessage: "", onlyOnBlur: true});
+		field0.add(Validate.Presence, {failureMessage:"This field is required"});
+		
+	var field1 = new LiveValidation("field1", {validMessage: "", onlyOnBlur: true});
+	var field2 = new LiveValidation("field2", {validMessage: "", onlyOnBlur: true});
+	
+	var field3 = new LiveValidation("field3", {validMessage: "", onlyOnBlur: true});
+	field3.add(Validate.Format, {pattern: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, failureMessage: "A valid email address is required"});
+	
+	var field4 = new LiveValidation("field4", {validMessage: "", onlyOnBlur: true});
+		field4.add(Validate.Presence, {failureMessage:"This field is required"});
+	
+	var field5 = new LiveValidation("field5", {validMessage: "", onlyOnBlur: true});
+		field5.add(Validate.Presence, {failureMessage:"This field is required"});
+	
+	var field6 = new LiveValidation("field6", {validMessage: "", onlyOnBlur: true});
+		field6.add(Validate.Presence, {failureMessage:"This field is required"});
+</script>
+			
+	
+			
+
+
+	</div>
+	</div>
+	</div>
+	</div>
+	<div id="footer">
+    	<div class="footerframe">
+        	<div class="footer-aleph">
+        	© Aleph Zero Research 2015<br />
+            Theme used based on Karma by <a href="http://www.truethemes.net/">True Themes</a>.
+            </div>
+            <div class="linkswrap">
+                <!--<div class="combined sitedirect">
+                    <a href="/">Home</a>
+                    <a href="/about/who-we-are/">About</a>
+                    <a href="/services/consulting-services/">Services</a>
+                    <a href="/blog/">Blog</a>
+                    <a href="/contact/">Contact</a>
+                </div>-->
+                
+                <div class="combined socialmediabuttons">
+                    <img src="/img/fbicon.png" width="30">
+                    <img src="/img/twittericon.png" width="30" />
+                    <img src="/img/emailicon.png" width="30" />
+                    <img src="/img/googleplusicon.png" width="30" />
+                </div>
+            </div>
+        </div>
+   </div>
+
+
+
+ </body>
+</html>

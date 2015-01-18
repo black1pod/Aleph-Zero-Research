@@ -1,0 +1,56 @@
+---
+layout: post
+title: Blog
+---
+
+{% include archive.html %}
+<div class="blog-posts">
+
+	<ul id="accordion">
+		{% for post in site.posts limit: 10 %}
+		<li>
+			<div class="blog-posts-box">
+			
+				<a class="post-title">{{ post.title }}</a>
+				
+				<!--<div class="blog-date">
+					<p>{{ post.date | date_to_long_string }}</p>
+				</div>-->
+				
+				<div class="blog-content">
+					{{ post.content }}
+				</div>
+			</div>
+		</li>			
+		{% endfor %}
+	</ul>
+</div>
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script>
+
+///DOC READY FUNCTIONS
+jQuery( document ).ready(function( $ ) {
+
+	jQuery( '#accordion' ).find( '.post-title' ).click( function( e ){ //Click function to toggle extending lists
+
+		e.preventDefault();		
+
+		jQuery( this ).next().slideToggle( 'fast' ).css( 'zoom', '1' );				
+		jQuery( this ).parent( 'li' ).toggleClass( 'collapse' );
+
+	} );
+
+	jQuery( '#accordion > li' ).each( function( $ ){ //Function initially hide lists with the override class of "extended"
+
+		if ( !jQuery( this ).hasClass( 'extended' ) ){
+
+			jQuery( this ).find( '.blog-content' ).slideUp( 'fast' ).css( 'zoom', '1' );
+			jQuery( this ).toggleClass( 'collapse' );
+
+		}
+	} );
+} );
+
+</script>
+

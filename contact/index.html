@@ -1,0 +1,91 @@
+---
+layout: default
+title: Contact Us
+---
+<div class="formmessage">
+	<h2>&nbsp;SEND US A MESSAGE</h2>
+	<p>Thank you for your interest in AZR Consulting.  We look forward to hearing from you.  Please feel free to contact us! </p>
+</div>
+
+
+<form method="POST" action="////formspree.io/frances.lim@uap.asia">
+	<div class="mainform">
+		
+		<div class="formwidth">
+			<p class="formfieldtitle">
+            	<input id="field0" name="name" type="text" value="Name" style="width: 100%"  class="formlabel"/>
+			</p>
+		</div>
+
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<input id="field1" name="company" type="text" value="Company" style="width: 100%" class="formlabel" />
+			</p>
+		</div>
+				
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<input id="field2" value="Contact Number" name="contactNum" type="text" style="width: 100%"class="formlabel"  />
+			</p>
+		</div>
+				
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+					<input id="field3" name="emailAddress" type="text" value="Email Address" style="width: 100%" class="formlabel" />
+			</p>
+		</div>		
+
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				
+					<select id="field4" name="subject" style="width: 100%" class="formlabel"><option value="">-- Select type of service --</option><option value="Consulting Services">Consulting Services</option><option value="Solid Solutions for IT" >Solid Solutions for IT</option><option value="Basic R" >Basic R</option><option value="Advance R" >Advance R</option><option value="R+ Statistical" >R+ Statistical</option></select>
+			</p>
+		</div>
+				
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<textarea id="field5" name="message" style="width: 100%" value="Message" class="formlabel"></textarea>
+			</p>
+		</div>						
+
+		<div class="formwidth">
+			<p class="formfieldtitle">
+				<label for="captchaLine" class="formlabel">72/2</label>
+				<input id="field6" name="captchaLine" type="text" value="" style="width: 20%"  />
+			</p>
+		</div>  
+				
+			
+		<div>
+			<div class="formwidth">
+				<p class="formfieldtitle">
+				<input type="submit" value="Submit" style="font-size: 100%; height: 24px; width: 100px"  /></p>
+			</div>
+		</div>
+	</div>
+</form>
+
+<script type="text/javascript" >
+	var field0 = new LiveValidation("field0", {validMessage: "", onlyOnBlur: true});
+		field0.add(Validate.Presence, {failureMessage:"This field is required"});
+		
+	var field1 = new LiveValidation("field1", {validMessage: "", onlyOnBlur: true});
+	var field2 = new LiveValidation("field2", {validMessage: "", onlyOnBlur: true});
+	
+	var field3 = new LiveValidation("field3", {validMessage: "", onlyOnBlur: true});
+	field3.add(Validate.Format, {pattern: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i, failureMessage: "A valid email address is required"});
+	
+	var field4 = new LiveValidation("field4", {validMessage: "", onlyOnBlur: true});
+		field4.add(Validate.Presence, {failureMessage:"This field is required"});
+	
+	var field5 = new LiveValidation("field5", {validMessage: "", onlyOnBlur: true});
+		field5.add(Validate.Presence, {failureMessage:"This field is required"});
+	
+	var field6 = new LiveValidation("field6", {validMessage: "", onlyOnBlur: true});
+		field6.add(Validate.Presence, {failureMessage:"This field is required"});
+</script>

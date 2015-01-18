@@ -1,0 +1,203 @@
+
+	@font-face{
+		font-family:"Familiar Pro-Bold";
+		src: url('/fonts/Familiar_Pro-Bold.otf') format('opentype'); }
+		
+		http://stackoverflow.com/questions/4872592/multiple-font-face-in-css
+	
+	*{box-sizing:border-box;}
+	html{background-color: transparent;width:100% !important;}
+	
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;}
+	
+	body{font-family: "Familiar Pro-Bold", Arial, Helvetica, sans-serif;;color: #ffffff;font-size:14px;background-color: #CCC;width:100%;margin:auto;line-height: 1.5em;}
+	
+	img{border:none;}
+	
+	ul, ol{list-style-type:none;color:#666666;border:none;}	
+		
+	a{text-decoration:none;border:0; color:#2200CC;}
+	
+	a:visited {text-decoration:none; color:#ffffff;}
+	
+	a:hover{text-decoration:underline;color:#ffc04c;}
+		
+	p{font-family: "Alegreya Sans", Arial, Helvetica, sans-serif;text-spacing:3px;margin-left:15px;}
+	
+	h1, h2{font-family: "Familiar Pro-Bold", Arial, Helvetica, sans-serif;}
+	
+	.h1{font-size:14px;font-weight:400;text-height:2; text-transform:uppercase;font-family: "Familiar Pro-Bold";}
+	
+	h2{font-size:16px;font-weight:200; padding-top:10px; margin-bottom:10px; font-family: Arial, Helvetica, sans-serif;margin-left:10px;font-weight:bold;}
+	
+	span, h3{font-size:14px; color: #000000;}
+	
+	h4{margin: 0 0 20px 0;}
+	
+	div{display:block;}
+	
+	input{border:none;}
+	input:focus, textarea, select{outline:none;}
+	blockquote{margin-bottom:20px;padding-left:30px;font-style:italic;border-left:3px #ffffff soild;font-family:Arial;}
+	
+	/*Sidebar images*/
+	.sidebar{margin:auto;width:300px;padding: 10px 10px 5px 10px; border-radius:15px;}
+	
+	/*Request a quote image/link*/
+	.requestaquote{width:300px;padding-top:15px;margin:auto;float:right;}
+	
+	/*For all content*/
+	#wrapper{width:100%;display:table;background-color:#F4F4F2;}
+	
+	/*Navigation menu and logo*/
+	#headerbig{	width:100%;height:130px;background:url("/img/head-div.jpg")0 0 repeat-x !important;	background-color:#19292E;clear: both;display: block;}
+	
+	#headercenter{width:980px;margin: 0 auto;padding:38px 0 38px;clear:both;display:block;}
+		
+	/*Logo*/
+	.logo{float: left;margin-left:22px;outline:none;background-color:transparent;border:0;width:150px;display:inline;}	
+	
+	/*Navigation menu*/
+	nav{float:right;width:650px;display:block;}
+
+	.main-menu{width: 100%;float: left;margin:0;padding:0;list-style:none;background-color:transparent;line-height: 100%;text-align:left; letter-spacing:px;text-transform:uppercase;font-size:14px;font-family:Arial, Helvetica, sans-serif;}
+	nav .top{width:20%;}
+	.main-menu li{float: left;padding: 2px 31px 0px 10px;margin:auto;
+position: relative;border:none;text-align:left; height:auto;background: url("/img/navseparator.png") 0 50% no-repeat;}
+	.main-menu li:hover{background-color:#80979F; -webkit-transition: background-color .1s ease;transition: background-color .1s ease;text-align:left; border-top-left-radius:5px; border-top-right-radius:5px;}
+	.main-menu li a{display: block;padding: 5px 10px;color: #ffffff;text-decoration:none;margin-bottom: 20px;line-height: 100%;margin-top:10px;}
+	.main-menu li a:hover{color: #ffffff;}	
+	.main-menu li:hover ul{left:0;}
+	
+	/*Second-level menu*/
+	.sub{font-size:12px;letter-spacing: 2px;font-family:Arial, Helvetica, sans-serif;}
+	.main-menu ul{list-style:none;margin:auto;position:absolute;left:-9999px;background-color:#80979F;border-radius:5px;margin-top: -4px; padding-bottom:20px; padding-top:10px; padding-left:0; width:130%;-webkit-box-shadow: 20px 50px 67px -29px rgba(80,89,92,0.56);
+-moz-box-shadow: 20px 50px 67px -29px rgba(80,89,92,0.56);
+box-shadow: 20px 50px 67px -29px rgba(80,89,92,0.56);}
+	.main-menu ul li{text-align:left;}
+	.main-menu ul a{white-space:nowrap;color: #000000;text-decoration:none;margin-bottom: 5px; line-height: 100%;text-transform:none;letter-spacing:normal; }
+	.main-menu ul li:hover,	.services li:hover{border-radius:0; background-color:#c8caca; width:100%;}
+	.main-menu ul a:hover, .services ul a:hover{color:#ffffff; text-decoration:none;}
+	.main-menu li .services{width:130%;}
+	
+	/*Third-level menu - Services*/
+	.services li ul{display:none; background: #80979F; font-family:Arial, Helvetica, sans-serif}
+	.services .solutions:hover ul{display:block; position:absolute;left:93%; border:none;padding-top:10px; border:none;top:-6px; width:100%;z-index:2;}
+		
+	
+	/*Main content box*/
+	#mainbox{
+		background:url("/img/top-div.jpg") 0 0 repeat-x; margin:auto;}
+		
+	.main-content{width:1000px;padding: 43px 0 5px;margin:auto;}
+		
+	.main-content-head{color: #ffffff;background:url("/img/banner-div.jpg") repeat-y;}
+    	
+	.main-content-head-left{background:url("/img/subhead-top.jpg") no-repeat;}
+
+	.main-content-head-left-frame{
+	background: url("/img/subhead-bottom.jpg") 0 100% no-repeat;height: 1%;overflow: hidden;	padding: 18px 22px 18px 20px;text-transform:uppercase; font-weight:600;
+	}
+        
+	.articles{overflow:hidden;margin:30px auto;background-color:#cccccc;padding:20px 10px 20px 10px;border-radius:15px;width:1000px;}
+		
+	/*Left content box*/
+	.content-width{width: 300px;margin-left: 0 !important;-webkit-box-shadow: 6px 10px 38px 0px #C6C6C6;box-shadow: 6px 10px 38px 0px #C6C6C6;color: #ffffff;display:inline;overflow:hidden;}
+		
+	.about-content-container{height: auto; padding: 20px 10px 45px;}
+	
+	.content-part{height:300px;overflow:hidden}
+	
+	#one, #two, #three{padding:15px 10px;}
+	
+	.content-part, .about-content-container{border-radius:15px;border-color:#000000;float:left;width:640px;margin-right: 15px !important;margin-left:13px;background-color: #413D3D;}
+	
+	.content-part-container{border-top-left-radius:15px;border-bottom-left-radius:15px;border-top-right-radius:15px;border-bottom-right-radius:15px;list-style:none;overflow-y: hidden;border-color:none;margin-left:10px;padding:0}
+	
+	.content-part-container li{height:300px;color: #ffffff;font-size:14px;padding:10px;}
+	
+	.content-part:hover, .about-content-container:hover{color:#ccc;text-decoration:none;background:#333;}
+	
+	/*Navigation - homepage*/
+	.content-nav{float:left;width:640px;margin: -60px 30px 0 10px; height:1%;}
+		
+	.content-part-nav{width: 100px;list-style: none;margin: 0 auto;overflow: hidden;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;position:relative;outline:none;border:0}	
+		
+	.content-part-nav li{float: left;text-align: center;padding:0;background-color: #004b8d;line-height: 10px;margin: 0 0 0 10px;border-radius:50%;font-size:30px;width:20px;height: 20px;vertical-align:middle;outline:none;border:0;}	
+		
+	.content-part-nav li:hover{color:#cccccc;text-decoration:none;background:#ffffff;}
+	
+	.content-part-nav a{	font: 0/0 a;color:transparent;text-shadow: none;display: block;width:10px;line-height:10px;text-align:center;margin:auto;		border-radius:50%;outline:none;border:0;position:fixed}		
+	
+	.content-part-nav a:active{text-decoration:none;outline:none;border:none;}
+	
+	.courseoutline{padding-left:20px;color:#ffffff;}	
+	
+	/*Right column content*/
+	.rightcolumn{float: left;margin: auto !important;background-color:#413D3D;border-radius:15px;}
+	
+	.right-column-container{border-top-left-radius:15px;border-bottom-left-radius:15px;border-top-right-radius:15px;border-bottom-right-radius:15px;background-color: #cccccc;padding: 10px;width:300px;}
+
+	/*Archive box*/
+	.archive-box{padding: 10px 3px;background-color:#413D3D;width:280px; float:left; margin-right: 15px; margin-left: 15px;border-radius:15px;display:block;}
+	
+	.archives{padding: 15px 23px;}
+	.year-archive{padding-bottom: 3px;font-weight:bold; text-spacing:2px;}
+	.month-archive, .title-archive{padding-left: 10px;}
+	.month-archive{color:#008080;padding-top:0;}
+	
+	/*Blog posts box*/
+	
+	.blog-posts{border-radius: 15px;width: 640px;float: right;margin-right: 20px;}
+	.blog-posts-box{background-color:#413D3D; overflow-y:hidden;border-color:none; padding: 15px 20px;font-size:14px; height:auto; border-bottom: 1px #cccccc solid;margin-bottom:10px; margin-left:auto;margin-right:auto;width:640px;border-radius:15px;}
+
+	.blog-date{height: 3%;color:#ffffff;font-weight:bold;background-color:#cccccc;margin-bottom:15px;}
+	
+	.post-title{padding:10px 10px;cursor: pointer;color:#00a7a7;font-size:16px;letter-spacing:2px;font-family:Calibri;}
+	
+	.blog-content{background-color:#ffffff;height:auto;color:#000000; padding: 20px; zoom: 1; display: block;}
+	.blog-title, .blog-date, .blog-content{margin: 20px auto; padding: 5px; width:570px;}
+	.post-content{margin-top:10px;padding-bottom:20px;}
+	
+	/*Contact us form*/
+	form{color:#ffffff;}
+	.mainform{height: 430px;background-color: #413D3D;padding: 15px 0 20px 3px;margin:0 15px 15px 15px;border-radius: 15px;}
+	.formwidth{float: left; width: 50%; margin: 5px 20px 0 15px;}
+	.formfieldtitle, .subbutton{position: relative; padding: 0px;font-weight:bold;}
+	.formfieldtitle{margin: 0px;}
+	input[type=submit] {padding:5px 15px; background:#ccc; border:0 none;margin:15px auto;cursor:pointer;}
+	.formlabel{padding:7px;}
+	.formmessage{color:#000000;margin-bottom:15px;}
+	
+	/*Contact us validation*/
+	.LV_validation_message{ font-weight:bold; margin: 0 0 0 5px; }
+	.LV_valid{ color:#00CC00; display:none; }
+	.LV_invalid{ color:#CC0000; font-size:10px; }
+	.LV_valid_field{padding:5px;}
+	.LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active { border: 1px solid #00CC00; }
+	.LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active { border: 1px solid #CC0000; }
+	
+	/*Footer*/
+	#footer{width:100%;background-color:#19292E; height:120px;clear:both;display: block;}
+	
+	.footerframe{width:1000px;margin:auto;}
+	
+	.footer-aleph{width:500px;color:#ffffff;padding: 30px 20px;font-family:Verdana, Geneva, sans-serif; font-size:11px;float:left;display:block;line-height:1.6em;}
+	
+	.linkswrap{padding-top:30px;}
+	.combined{float:right;}
+	.sitedirect{}
+	.socialmediabuttons{width:auto; height:50px;margin-right:50px;}
